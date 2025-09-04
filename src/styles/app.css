@@ -1,0 +1,94 @@
+:root {
+  --icon-small-size: 24px;
+}
+
+#app {
+  width: 100%;
+  max-width: 1024px;
+  min-width: 320px;
+  /*max-width: 1280px;*/
+  height: 100vh;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+#projects {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#projects ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.project {
+  margin-top: 2em;
+}
+
+.project:has(.details-button:last-child) + .project {
+  margin-top: calc(2em - var(--icon-small-size));
+}
+
+.project .details-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5em;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+}
+
+.project-details {
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.project-details img {
+  margin: 0;
+}
+
+.project-icon-list {
+  display: flex;
+  gap: 0.5em;
+  margin-top: 0.5em;
+}
+
+.project-icon-list .icon,
+.icon-small {
+  width: var(--icon-small-size);
+  height: var(--icon-small-size);
+  cursor: pointer;
+}
+
+.project-icon-list .platforms {
+  width: 64px;
+}
+
+.down-arrow {
+  transform: rotate(180deg);
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.preact:hover {
+  filter: drop-shadow(0 0 2em #673ab8aa);
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
