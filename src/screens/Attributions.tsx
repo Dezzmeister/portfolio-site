@@ -47,11 +47,13 @@ export const Attributions: Preact.FunctionalComponent = () => {
             and edited with <a href="https://online-video-cutter.com/">Online Video Cutter</a>.
         </p>
       </section>
-      <hr />
       <section>
         <p>
             This site was built with <a href="https://preactjs.com/">Preact</a> and <a href="https://www.typescriptlang.org/">Typescript</a>.
             The site is served by <a href="https://github.com/Dezzmeister/gru-http">gru-http</a>.
+        </p>
+        <p>
+            The source code for this site is available at <a href="https://github.com/Dezzmeister/portfolio-site">https://github.com/Dezzmeister/portfolio-site</a>.
         </p>
       </section>
     </main>
